@@ -1,0 +1,29 @@
+/* This program is intended to show that compound IF THEN ELSE
+    statements and the '>' relop works. The program takes in 
+    two integers from the user. If the sum of the two integers
+    is 10 or greater, then it multiplies the two input integers
+    by 10, recomputes the sum, and prints the new sum. Else (the
+    sum is 9 or less) it will multiply the two inputs by 1
+    and recompute the sum (which should be the same as the initial
+    sum) and will print that sum.*/
+
+CLASS PGM1{
+	VAR a, b, sum;
+
+	Read a;
+    Read b;
+
+    sum = a + b;
+
+    IF sum > 9 THEN{
+        a = a * 10;
+        b = b * 10;
+        sum = a + b;
+    } ELSE {
+        a = a * 1;
+        b = b * 1;
+        sum = a + b;
+    }
+
+	Print sum;
+}

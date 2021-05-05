@@ -1,0 +1,8 @@
+/* This program reads in 2 values and prints the larger value. */
+CLASS PGM1{
+	VAR a, b, ans;
+	Read a;
+	Read b;
+	IF a < b THEN ans = b ELSE ans = a;
+	Print ans;
+}

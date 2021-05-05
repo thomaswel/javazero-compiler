@@ -1,0 +1,14 @@
+CLASS PGM1{
+	VAR a, b, c, Bob, Jane, ans;
+
+	Read a;
+	Read b;
+	Read c;
+	Read Bob;
+	Read Jane;
+
+
+	ans = a * ((Bob +Jane -10) /2 * 4)/ (b + c);
+
+	Print ans;
+}

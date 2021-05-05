@@ -1,0 +1,13 @@
+/* This program reads in an integer value and prints
+its factorial. */
+
+CLASS PGM1{
+	VAR fact, product;
+	Read fact;
+    product = 1;
+	WHILE fact >= 1 DO {
+        product = product * fact;
+        fact = fact - 1;
+    }
+	Print product;
+}

@@ -1,0 +1,13 @@
+/* This program reads in 1 value that is less than the constant 5
+	and adds 1 to it until it equals the constant. Then it prints the value.
+	It should always print out 5 as long as it is given a number less than
+	or equal to 5. */
+
+CLASS PGM1{
+	CONST x = 5;
+	VAR a;
+
+	Read a;
+	WHILE a != x DO a = a + 1;
+	Print a;
+}

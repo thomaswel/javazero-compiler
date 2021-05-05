@@ -1,0 +1,35 @@
+/* This program is meant to demonstrate that
+a nested WHILE DO (4 deep) works. It will take
+4 input integers from the user that are all less than
+10, and then it will enter the nested while loops and 
+make all of the inputs equal to 10. It will then print
+out all of the input variables, and they should all be
+equal to 10.  */
+
+CLASS PGM1 {
+	CONST X = 10;
+    VAR A, B, C, D;
+
+    Read A;
+    Read B;
+    Read C;
+    Read D;
+
+	WHILE A < X DO {
+		A = A+1;
+		WHILE B < X DO{
+			B = B+1;
+			WHILE C < X DO{
+				C = C + 1;
+                WHILE D < X DO{
+                    D = D+1;
+                }
+			}
+		}	
+	}
+
+    Print A;
+    Print B;
+    Print C;
+    Print D;
+}
